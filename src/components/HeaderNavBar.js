@@ -6,20 +6,31 @@ import HomeLogo from "../app/favicon.png";
 const HeaderNavBar = () => {
   return (
     <>
-      {/* Link for Home Logo  */}
+      {/* Link for Home Logo  . But It don't work properly */}
       <Link href={"./"}>
-        <Image
-          src={HomeLogo}
-          alt="Home logo"
-          width={100}
-          height={50}
-          className="rounded-full m-3 border-4 border-red-600  cursor-pointer left  hover:border-violet-600 "
-        />
+        {/* <Image
+            src={HomeLogo}
+            alt="Home logo"
+            width={100}
+            height={50}
+            className="rounded-full m-2 border-4 border-red-600 cursor-pointer hover:border-violet-600"
+          />
+        */}
       </Link>
       {/* For All links to navigate page to page i.e navbar header */}
-      <nav className="  text-2xl text-blue-300 hover:text-pink-500 font-serif m-30">
-        {" "}
-        <Link href={"./random-quote"}>Random Quote</Link>
+      <nav className="  text-2xl text-blue-300  font-serif m-3 ">
+        {/* Home page link */}
+        <Link className="m-9 font-bold hover:text-red-600" href={"./"}>
+          🏠Home
+        </Link>{" "}
+        {/* Random quote generator link */}
+        <Link href={"./random-quote"}>Random Quote</Link>{" "}
+        {/* QR code generator link */}
+        <Link className="m-9 font-mono " href={"./qr-code-generator"}>
+          Generate QR
+        </Link>
+        {/* Demo page for colocation i.e components reusability */}
+        <Link href={"./demo"}>Demo</Link>{" "}
       </nav>
     </>
   );

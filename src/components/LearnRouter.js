@@ -8,7 +8,7 @@ const LearnRouter = () => {
   console.log(router);
   return (
     <div>
-      <h1>Learn About Use Router Hooks in Next js .Sew console ... </h1>
+      <h1>Learn About Use Router Hooks in Next js .See console ... </h1>
     </div>
   );
 };
