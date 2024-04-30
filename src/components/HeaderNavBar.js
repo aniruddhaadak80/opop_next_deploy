@@ -18,20 +18,26 @@ const HeaderNavBar = () => {
         */}
       </Link>
       {/* For All links to navigate page to page i.e navbar header */}
-      <nav className="  text-2xl text-blue-300  font-serif m-3 ">
+      <header className="  text-2xl text-blue-300  font-serif space-x-10 m-6  ">
         {/* Home page link */}
-        <Link className="m-9 font-bold hover:text-red-600" href={"./"}>
+        <Link className=" font-bold hover:text-red-600" href={"./"}>
           🏠Home
         </Link>{" "}
         {/* Random quote generator link */}
         <Link href={"./random-quote"}>Random Quote</Link>{" "}
         {/* QR code generator link */}
-        <Link className="m-9 font-mono " href={"./qr-code-generator"}>
+        <Link className=" font-mono " href={"./qr-code-generator"}>
           Generate QR
         </Link>
         {/* Demo page for colocation i.e components reusability */}
         <Link href={"./demo"}>Demo</Link>{" "}
-      </nav>
+        <Link
+          className=" font-semibold hover:text-green-300"
+          href={"./about-me"}
+        >
+          Ⓜ️About Me
+        </Link>{" "}
+      </header>
     </>
   );
 };
