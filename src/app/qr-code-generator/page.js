@@ -17,7 +17,7 @@ const QrCodeGeneratorFunc = async () => {
 
       if (userval.length > 0) {
         let apiUrl =
-          await `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${userval}`;
+          await `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(userval)}`;
         //display the qr image
         displayQr.src = apiUrl;
       }
